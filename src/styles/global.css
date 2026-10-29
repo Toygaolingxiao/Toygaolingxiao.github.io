@@ -72,6 +72,11 @@ td b{color:var(--ink);font-weight:700}
 .photo-grid .photo-item img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;border:1px solid var(--line)}
 .photo-grid .photo-item figcaption{font-size:11.5px;color:var(--muted);margin-top:7px;letter-spacing:.03em}
 .photo-awards{font-size:13px;color:var(--faint);margin-top:18px}
+.photo-honours{margin-top:22px;max-width:640px}
+.honours-group{border-top:1px solid var(--line);padding:12px 0 4px}
+.honours-group + .honours-group{margin-top:10px}
+.honours-label{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:5px}
+.honours-group .photo-awards{margin-top:0}
 .photo-more{font-size:13.5px;margin-top:10px}
 @media (max-width:640px){.photo-grid{grid-template-columns:repeat(2,1fr)}}
 
