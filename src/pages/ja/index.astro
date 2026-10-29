@@ -9,7 +9,7 @@ import photos from '../../data/photos.json';
   <main>
     <section id="about">
       <div class="sec-head"><span class="num">01.</span><h2>自己紹介</h2></div>
-      <p>半導体製造のための、現場に根ざした Agentic AI を作っています。ソニーセミコンダクタ（SCK）で <strong>7.25 年</strong>、有限状態機械（FSM）を核とする fab 向けシステムに携わり、AI・DX 分野で <strong>General Manager Award</strong> を受賞しました。現在は <strong>BayCurrent Consulting のシニアコンサルタント</strong>です。</p>
+      <p>半導体製造のための、現場に根ざした Agentic AI を作っています。ソニーセミコンダクタマニュファクチャリングで <strong>7.25 年</strong>、fab 向けの製造実行システム（MES）と AI スケジューリングシステムの開発に携わり、生産技術部門 <strong>部門長賞【AI/DX賞】</strong>を受賞しました。現在は <strong>BayCurrent Consulting のシニアコンサルタント</strong>として、有限状態機械（FSM）設計を核とする C# 製 POS システムのクライアントプロジェクトなどに携わっています。</p>
       <p>私の基準は一つだけです。<strong>AI の居場所はデモではなく実測で決める。</strong>すべての AI コンポーネントをルールベースラインと同条件で測り、勝った場所にだけ置く。負けた結果も公開します。</p>
       <p style="margin-top:26px">仕事の外では風景写真を撮っています。拠点は東京ですが、被写体の中心は、長年暮らした長崎です。</p>
       <figure class="photo-main"><img src="https://www.nagasaki-tabinet.com/storage/special_feature_paragraph_contents/3960/responsive_images/ZxE0zKjIUQ0eWeGq5y9if8PyfyD8XYvyCUdw7FIV__999_999.jpeg" alt="雪の長崎を走る路面電車 — 高凌霄（Takae_lx）撮影"><figcaption>雪の長崎 ・ 長崎『おもてなし』フォトコンテスト 準グランプリ。© 高凌霄（Takae_lx）</figcaption></figure>
@@ -85,14 +85,80 @@ import photos from '../../data/photos.json';
         <div class="cell planned"><div class="big">🍑</div><div class="name">桃</div><div class="st">計画中</div></div>
         <div class="cell planned"><div class="big">🐄</div><div class="name">和牛</div><div class="st">計画中</div></div>
       </div>
-      <div class="chips" style="margin-top:26px">
-        <span class="chip">C# FSM</span><span class="chip">Python</span><span class="chip">PyTorch</span><span class="chip">DRL</span><span class="chip">Agentic AI</span>
+    </section>
+
+    <section id="experience">
+      <div class="sec-head"><span class="num">04.</span><h2>経歴</h2></div>
+      <div class="xp">
+        <div class="when">2026年7月 – 現在</div>
+        <h3>株式会社ベイカレント・コンサルティング — シニアコンサルタント</h3>
+        <ul class="facts">
+          <li>入社後、SAP S/4HANA領域のキャッチアップを行い、約2カ月でSAP認定資格5件（生産計画、購買、販売、ABAP開発、SAP Activateプロジェクトマネージャー）を取得。</li>
+          <li>生成AIを活用した学習支援ツールを自律的に設計・開発し、ERPグループ（数十名）へ展開。グループメンバーの資格合格に直接貢献。</li>
+          <li>現在、クライアントのPOSシステム案件に参画（C#／有限状態機械による設計・開発）。</li>
+        </ul>
       </div>
-      <p style="font-size:14.5px">資格：AZ-900 · AI-901 · DP-900 · GH-300 · AWS AIF-C01</p>
+      <div class="xp">
+        <div class="when">2025年4月 – 2026年6月</div>
+        <h3>ソニーセミコンダクタマニュファクチャリング株式会社 — 最適生産システム開発課</h3>
+        <p>5名体制の技術リード。</p>
+        <ul class="facts">
+          <li>深層強化学習（GRPO）を用いた次世代AIスケジューラの要件定義・アーキテクチャ設計・データインフラ設計を主導。半導体製造における32項目の制約条件をモデル化。</li>
+          <li>24時間分のスケジュールシミュレーション計算時間を、従来の20分以上から5分以内へ短縮。</li>
+          <li>製造制約判定のコアロジックをRust（PyO3）で再構築し、重計算処理時間を従来の約2時間から3.7秒へ短縮。</li>
+          <li>製造データのリアルタイム解析・可視化Webシステム（ガントチャート、WIPヒートマップ、流動予測、ボトルネック特定）を構築し、部署内へ展開。</li>
+        </ul>
+      </div>
+      <div class="xp">
+        <div class="when">2019年4月 – 2025年3月</div>
+        <h3>ソニーセミコンダクタマニュファクチャリング株式会社 — MESシステム開発課</h3>
+        <ul class="facts">
+          <li><strong>LITHO工程スタンドアロン化プロジェクト（2021年12月 – 2025年3月）:</strong> 最大30名体制のサブリーダー。装置スタンドアロン化に伴うMES大規模改修と自動化制御の刷新を主導し、LITHO工程の稼働効率を3倍に向上。プロジェクトを無遅延で完遂。</li>
+          <li><strong>グローバル大手半導体メーカーとの共同タスクフォース（2023年7月 – 10月、以降スポット対応）:</strong> MES／Dispatch／Schedule／AMHS／ECSの日中システムテクニカル通訳とブリッジエンジニアリングを主導。製品リードタイム25%短縮、デイリー生産数61%向上に貢献。</li>
+          <li><strong>高度制御機能の開発（2019年 – 2021年）:</strong> バーチャル測定制御機能の改造・水平展開により、測定機負荷軽減とリードタイム短縮を達成。</li>
+          <li>MES更新に伴う工場内端末更新において、3日間で600台以上の端末デプロイをノートラブルで完了。</li>
+        </ul>
+      </div>
+      <div class="honours-group">
+        <div class="honours-label">表彰</div>
+        <ul class="facts">
+          <li>生産技術部門 部門長賞（2026年）</li>
+          <li>High Performance Rewards（2026年）</li>
+          <li>直近3年連続最高評価（2023年度～2025年度）</li>
+          <li>FAシステム開発部 SSS報告会 銀賞（バーチャル測定制御機能の改造・水平展開に対して）</li>
+        </ul>
+      </div>
+      <div class="honours-group">
+        <div class="honours-label">資格</div>
+        <ul class="facts">
+          <li><strong>SAP（2026年）:</strong> C_TS422（生産計画・製造）、C_TS452（購買）、C_TS462（販売）、C_ABAPD（ABAP Cloud バックエンド開発）、C_ACT（SAP Activate プロジェクトマネージャー）</li>
+          <li><strong>Microsoft（2026年）:</strong> AZ-900、AI-901、DP-900、GH-300</li>
+          <li><strong>AWS:</strong> Certified AI Practitioner（AIF-C01）（2026年）</li>
+          <li><strong>Google Cloud:</strong> Certified – Generative AI Leader（2025年）</li>
+          <li><strong>生成AIパスポート</strong>（2026年）</li>
+          <li><strong>基本情報技術者</strong>（2024年）</li>
+          <li><strong>2級生産管理スペシャリスト</strong>（オペレーション／プランニング）（2025年）</li>
+        </ul>
+      </div>
+      <div class="honours-group">
+        <div class="honours-label">スキル</div>
+        <p style="font-size:15px">Python · Rust · Java · C# · SQL · 深層強化学習（GRPO）· 半導体製造ドメイン（MES／ディスパッチ／AMHS／ECS）· Django · Docker</p>
+      </div>
+      <div class="honours-group">
+        <div class="honours-label">学歴</div>
+        <ul class="facts">
+          <li><strong>長崎大学大学院</strong> 工学研究科 総合工学専攻 情報工学コース 修了（2019年）</li>
+          <li><strong>北京郵電大学</strong> 信息与通信工程学院 通信工学 卒業（2016年）</li>
+        </ul>
+      </div>
+      <div class="honours-group">
+        <div class="honours-label">語学</div>
+        <p style="font-size:15px">中国語（母国語）· 日本語（JLPT N1）· 英語（TOEIC 725点）</p>
+      </div>
     </section>
 
     <section id="contact">
-      <div class="sec-head"><span class="num">04.</span><h2>連絡先</h2></div>
+      <div class="sec-head"><span class="num">05.</span><h2>連絡先</h2></div>
       <p>連絡は GitHub が最速です。</p>
       <a class="cta" href="https://github.com/Toygaolingxiao">github.com/Toygaolingxiao</a>
     </section>

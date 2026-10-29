@@ -10,7 +10,7 @@ import photos from '../data/photos.json';
     <section id="about">
       <div class="sec-head"><span class="num">01.</span><h2>About</h2></div>
       <p class="lede">I build production-oriented AI for semiconductor manufacturing.</p>
-      <p>For <strong>7.25 years at Sony Semiconductor (SCK)</strong>, I worked on finite-state-machine systems for fab operations — work that received a <strong>General Manager Award in AI/DX</strong>. Today I am a <strong>Senior Consultant at BayCurrent Consulting</strong>.</p>
+      <p>For <strong>7.25 years at Sony Semiconductor Manufacturing</strong>, I built manufacturing execution systems (MES) and an AI scheduling system for fab operations — work that received a <strong>Department Manager Award (AI/DX)</strong>. Today I am a <strong>Senior Consultant at BayCurrent Consulting</strong>, where my client work includes a POS system built in C# around finite-state-machine design.</p>
       <p>My working rule is simple: <strong>AI earns its place by measurement, not by demo.</strong> Every AI component I ship is benchmarked against a rule-based baseline on the same data. Where it wins, it stays. Where it loses, it moves to explaining — and the losses are published too.</p>
       <p>That discipline produced my flagship project below.</p>
       <p class="photo-note">Off the fab floor, I photograph landscapes. I am based in Tokyo; most of my frames are still of Nagasaki, where I lived for years.</p>
@@ -116,19 +116,71 @@ import photos from '../data/photos.json';
     <section id="experience">
       <div class="sec-head"><span class="num">06.</span><h2>Experience</h2></div>
       <div class="xp">
-        <div class="when">NOW</div>
-        <h3>Senior Consultant — BayCurrent Consulting</h3>
-        <p>AI and smart-manufacturing consulting. (Company and title only, by design.)</p>
+        <div class="when">Jul 2026 – Present</div>
+        <h3>BayCurrent Consulting — Senior Consultant</h3>
+        <ul class="facts">
+          <li>Completed an SAP S/4HANA catch-up on joining, earning five SAP certifications (production planning, procurement, sales, ABAP development, and Activate project management) in about two months.</li>
+          <li>Designed, built, and rolled out a generative-AI study-support tool to the ERP group (several dozen members), directly supporting members' certification passes.</li>
+          <li>Currently engaged in a client POS system project, developed in C# with finite-state-machine design.</li>
+        </ul>
       </div>
       <div class="xp">
-        <div class="when">7.25 YEARS</div>
-        <h3>Sony Semiconductor (SCK)</h3>
-        <p>Finite-state-machine systems for semiconductor manufacturing. General Manager Award (AI/DX).</p>
+        <div class="when">Apr 2025 – Jun 2026</div>
+        <h3>Sony Semiconductor Manufacturing — Optimal Production Systems Development Dept.</h3>
+        <p>Technical lead of a five-person team.</p>
+        <ul class="facts">
+          <li>Led the requirements, architecture, and infrastructure design of a next-generation AI production scheduler using deep reinforcement learning (GRPO), modelling 32 manufacturing constraints.</li>
+          <li>Cut the computation time for a 24-hour schedule simulation from over 20 minutes to under 5 minutes.</li>
+          <li>Rebuilt the constraint-checking core logic in Rust (PyO3), cutting heavy computation from about 2 hours to 3.7 seconds.</li>
+          <li>Built and deployed a real-time manufacturing-data visualisation system (Gantt charts, WIP heat maps, flow forecasting, bottleneck identification), now used in department operations.</li>
+        </ul>
       </div>
-      <div class="chips">
-        <span class="chip">C# FSM</span><span class="chip">Python</span><span class="chip">PyTorch</span><span class="chip">DRL</span><span class="chip">Agentic AI</span>
+      <div class="xp">
+        <div class="when">Apr 2019 – Mar 2025</div>
+        <h3>Sony Semiconductor Manufacturing — MES Systems Development Dept.</h3>
+        <ul class="facts">
+          <li><strong>LITHO standalone project (Dec 2021 – Mar 2025):</strong> sub-leader of a team of up to 30. Led the MES overhaul for lithography equipment standalone operation and renewed its automation control, tripling lithography operating efficiency; the project completed without delay.</li>
+          <li><strong>Joint task force with a global semiconductor manufacturer (Jul – Oct 2023, spot support thereafter):</strong> bridge engineering and Japanese–Chinese technical interpreting across MES, dispatch, scheduling, AMHS, and ECS systems; the work contributed to a 25% reduction in product lead time and a 61% increase in daily output.</li>
+          <li><strong>Advanced control functions (2019 – 2021):</strong> extended virtual-metrology control functions across production lines, reducing measurement-equipment load and lead time.</li>
+          <li>Led the rollout of 600+ factory terminals in three days with no incidents during an MES system update.</li>
+        </ul>
       </div>
-      <p style="font-size:14.5px">Certifications: AZ-900 · AI-901 · DP-900 · GH-300 · AWS AIF-C01</p>
+      <div class="honours-group">
+        <div class="honours-label">Awards</div>
+        <ul class="facts">
+          <li>Department Manager Award (AI/DX Award), Production Technology Division (2026)</li>
+          <li>High Performance Rewards (2026)</li>
+          <li>Highest performance rating for three consecutive years (FY2023–FY2025)</li>
+          <li>Silver Award, FA Systems Development Department SSS Reporting Conference (for the virtual-metrology control work)</li>
+        </ul>
+      </div>
+      <div class="honours-group">
+        <div class="honours-label">Certifications</div>
+        <ul class="facts">
+          <li><strong>SAP (2026):</strong> C_TS422 (Production Planning and Manufacturing), C_TS452 (Sourcing and Procurement), C_TS462 (Sales), C_ABAPD (Back-End Developer – ABAP Cloud), C_ACT (Project Manager – SAP Activate)</li>
+          <li><strong>Microsoft (2026):</strong> AZ-900 (Azure Fundamentals), AI-901 (Azure AI Fundamentals), DP-900 (Azure Data Fundamentals), GH-300 (GitHub Copilot)</li>
+          <li><strong>AWS:</strong> Certified AI Practitioner (AIF-C01) (2026)</li>
+          <li><strong>Google Cloud:</strong> Certified – Generative AI Leader (2025)</li>
+          <li><strong>Generative AI Passport</strong> （生成AIパスポート） (2026)</li>
+          <li><strong>Fundamental Information Technology Engineer Examination</strong> （基本情報技術者） (2024)</li>
+          <li><strong>Production Management Specialist, Grade 2</strong> — Operations and Planning (2025)</li>
+        </ul>
+      </div>
+      <div class="honours-group">
+        <div class="honours-label">Skills</div>
+        <p style="font-size:15px">Python · Rust · Java · C# · SQL · Deep reinforcement learning (GRPO) · Semiconductor manufacturing domain (MES / dispatch / AMHS / ECS) · Django · Docker</p>
+      </div>
+      <div class="honours-group">
+        <div class="honours-label">Education</div>
+        <ul class="facts">
+          <li><strong>Nagasaki University</strong> — M.Eng., Information Engineering (2019)</li>
+          <li><strong>Beijing University of Posts and Telecommunications</strong> — B.Eng., Telecommunications Engineering (2016)</li>
+        </ul>
+      </div>
+      <div class="honours-group">
+        <div class="honours-label">Languages</div>
+        <p style="font-size:15px">Chinese (native) · Japanese (JLPT N1) · English (TOEIC 725)</p>
+      </div>
     </section>
 
     <section id="contact">
