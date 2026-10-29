@@ -1,0 +1,118 @@
+---
+import Base from '../layouts/Base.astro';
+import Sidebar from '../components/Sidebar.astro';
+---
+<Base lang="en" title="高凌霄 — AI & Smart Manufacturing" description="I help semiconductor fab teams make their schedules explainable — rules decide, AI explains. Flagship: ResiliMES-AI.">
+<div class="layout">
+  <Sidebar lang="en" />
+  <main>
+    <section id="about">
+      <div class="sec-head"><span class="num">01.</span><h2>About</h2></div>
+      <p class="lede">I build production-oriented AI for semiconductor manufacturing.</p>
+      <p>For <strong>7.5 years at Sony Semiconductor (SSS/SCM)</strong>, I worked on finite-state-machine systems for fab operations — work that received a <strong>General Manager Award in AI/DX</strong>. Today I am a <strong>Senior Consultant at BayCurrent Consulting</strong>.</p>
+      <p>My working rule is simple: <strong>AI earns its place by measurement, not by demo.</strong> Every AI component I ship is benchmarked against a rule-based baseline on the same data. Where it wins, it stays. Where it loses, it moves to explaining — and the losses are published too.</p>
+      <p>That discipline produced my flagship project below.</p>
+      <p class="photo-note">Off the fab floor, I photograph landscapes — mostly around Nagasaki, where I live. These frames are reserved for my own shots.</p>
+      <div class="photo-slot wide"><div class="cam">📷</div><div class="cap">Landscape photograph by Lingxiao Gao — photo to be added</div><div class="loc">Nagasaki, Japan</div></div>
+      <div class="photo-strip"><div class="photo-slot "><div class="cam">📷</div><div class="cap">Landscape photograph by Lingxiao Gao — photo to be added</div><div class="loc">Nagasaki, Japan</div></div><div class="photo-slot "><div class="cam">📷</div><div class="cap">Landscape photograph by Lingxiao Gao — photo to be added</div><div class="loc">Nagasaki, Japan</div></div><div class="photo-slot "><div class="cam">📷</div><div class="cap">Landscape photograph by Lingxiao Gao — photo to be added</div><div class="loc">Nagasaki, Japan</div></div></div>
+    </section>
+
+    <section id="flagship">
+      <div class="sec-head"><span class="num">02.</span><h2>Flagship — ResiliMES-AI</h2></div>
+      <p class="lede">Right-click a bar — or an idle gap — on a fab Gantt chart and ask “why?”.</p>
+      <p>A fab schedule spans <strong>1,313 tools, 2,156 lots and 264 Q-time constraints</strong>. Nobody can read it end to end, so floor leads override it from experience — most often by filling an idle gap that was, in fact, protecting a downstream Q-time window. ResiliMES-AI puts the answer on the chart itself: a rule kernel makes every decision and records its reasons; the AI only explains, and every number in its answer is fact-checked by code. Built for the Open Agent Hackathon 2026, Track 02 — “The Agent That Can Explain Why”.</p>
+      <figure class="flagship-card">
+        <div class="shot">
+          <div class="step">1 — Right-click a bar or gap</div>
+          <img src="https://raw.githubusercontent.com/Toygaolingxiao/ResiliMES-AI/main/docs/deck/img/p5_menu.jpg" alt="ResiliMES-AI Gantt chart with right-click investigation menu">
+          <figcaption>The investigation entry: right-click any bar, gap, or the time axis on the Gantt.</figcaption>
+        </div>
+        <div class="shot">
+          <div class="step">2 — The explanation panel, every number fact-checked</div>
+          <img src="https://raw.githubusercontent.com/Toygaolingxiao/ResiliMES-AI/main/docs/deck/img/p5_panel.jpg" alt="ResiliMES-AI investigation panel with the fact-checked explanation">
+          <figcaption>The answer comes from the scheduler's own decision record. The AI drafts the explanation; code checks every number before it is shown.</figcaption>
+        </div>
+        <table>
+          <tr><th>Test</th><th>Measured result</th></tr>
+          <tr><td>Fill the gaps</td><td>Filling all 6,864 deliberate idle gaps in a 48 h run raises avoidable Q-time violations from <b>23 → 42</b>. The gaps are decisions, not waste.</td></tr>
+          <tr><td>Shift-note extraction</td><td>AI-extracted shift notes cut avoidable Q-time violations <b>17 → 14</b> — matching the gold-standard events, with <b>0 new violations</b>.</td></tr>
+          <tr><td>Remove the AI</td><td>Removing Nemotron leaves the schedule <b>unchanged</b>: 0 AI calls in the default run. The AI never writes the schedule.</td></tr>
+          <tr><td>AI duty officer</td><td>Under factory trigger settings, the AI escalation path fired <b>0 times</b> — the rule kernel handled every anomaly. Reported as measured, not dressed up as a feature.</td></tr>
+        </table>
+        <div class="links-row">
+          <a href="https://github.com/Toygaolingxiao/ResiliMES-AI">GitHub repository ↗</a>
+          <span class="placeholder" id="demo-video-placeholder">Demo video — link to be added</span>
+        </div>
+      </figure>
+    </section>
+
+    <section id="works">
+      <div class="sec-head"><span class="num">03.</span><h2>Works</h2></div>
+      <div class="work">
+        <h3><a href="https://komesomme.jp">KomeSomme | 侍米師</a> <span class="tag">Live</span></h3>
+        <p>An atlas of Japanese rice brands by flavour: pick today's bowl by dish, mood, or pairing. The first cell of the Somme Matrix.</p>
+      </div>
+      <div class="work">
+        <h3>Schedule_Viewer <span class="tag grey">v7.16.1 · Case study in preparation</span></h3>
+        <p>A Django + Rust platform for visualising, analysing, and constraint-checking AI scheduler output — Gantt charts, schedule analysis, KPI dashboards. The direct predecessor of ResiliMES-AI's Gantt. (Private repository.)</p>
+      </div>
+      <div class="work">
+        <h3>pmo-kit <span class="tag grey">Public</span></h3>
+        <p>A local-first PMO workbench: one human-readable <i>project-plan.json</i> drives WBS, progress, RAID, and issues — and renders client-ready HTML, CSV, Mermaid Gantt charts, and weekly status drafts.</p>
+      </div>
+      <div class="work">
+        <h3>Sprout <span class="tag grey">Also built</span></h3>
+        <p>A shared checklist PWA for couples, from fertility preparation through childcare — staged tasks and shared family progress in Japanese, Chinese, and English.</p>
+      </div>
+    </section>
+
+    <section id="matrix">
+      <div class="sec-head"><span class="num">04.</span><h2>Somme Matrix</h2></div>
+      <p>One atlas skeleton — a flavour map, a variety library, and an “ask the sommelier” guide — reused across the specialities of Japan.</p>
+      <div class="matrix">
+        <div class="cell"><div class="big">🍚</div><div class="name">Rice</div><div class="st">Live</div></div>
+        <div class="cell planned"><div class="big">🍶</div><div class="name">Sake</div><div class="st">Planned</div></div>
+        <div class="cell planned"><div class="big">🥃</div><div class="name">Japanese Whisky</div><div class="st">Planned</div></div>
+        <div class="cell planned"><div class="big">🍑</div><div class="name">Peach</div><div class="st">Planned</div></div>
+        <div class="cell planned"><div class="big">🐄</div><div class="name">Wagyu</div><div class="st">Planned</div></div>
+      </div>
+    </section>
+
+    <section id="writing">
+      <div class="sec-head"><span class="num">05.</span><h2>Writing</h2></div>
+      <div class="start-card">
+        <div class="soon">START HERE</div>
+        <h3>We tried AI at every step of a fab — and let it only explain.</h3>
+        <p>The full ResiliMES-AI case review: every place AI was tried, each measured against the rule baseline — where it helped, where it tied, and where it lost.</p>
+        <p class="soon" style="margin-top:8px">In preparation — published here first.</p>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="sec-head"><span class="num">06.</span><h2>Experience</h2></div>
+      <div class="xp">
+        <div class="when">NOW</div>
+        <h3>Senior Consultant — BayCurrent Consulting</h3>
+        <p>AI and smart-manufacturing consulting. (Company and title only, by design.)</p>
+      </div>
+      <div class="xp">
+        <div class="when">7.5 YEARS</div>
+        <h3>Sony Semiconductor (SSS/SCM)</h3>
+        <p>Finite-state-machine systems for semiconductor manufacturing. General Manager Award (AI/DX).</p>
+      </div>
+      <div class="chips">
+        <span class="chip">C# FSM</span><span class="chip">Python</span><span class="chip">PyTorch</span><span class="chip">DRL</span><span class="chip">Agentic AI</span>
+      </div>
+      <p style="font-size:14.5px">Certifications: AZ-900 · AI-901 · DP-900 · GH-300 · AWS AIF-C01</p>
+    </section>
+
+    <section id="contact">
+      <div class="sec-head"><span class="num">07.</span><h2>Contact</h2></div>
+      <p>The fastest way to reach me is GitHub. Manufacturing peers: start with the flagship — the numbers are all there. Opportunities and introductions: GitHub is the door.</p>
+      <a class="cta" href="https://github.com/Toygaolingxiao">github.com/Toygaolingxiao</a>
+    </section>
+
+    <footer>v0 — local build. Not yet published.</footer>
+  </main>
+</div>
+</Base>

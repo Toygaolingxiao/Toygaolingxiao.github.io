@@ -1,0 +1,77 @@
+---
+import Base from '../../layouts/Base.astro';
+import Sidebar from '../../components/Sidebar.astro';
+---
+<Base lang="ja" title="高凌霄 — AI × スマート製造" description="ルールが決め、AIが説明する。半導体fabのスケジュールを「説明できる」ものにします。代表作 ResiliMES-AI。">
+<div class="layout">
+  <Sidebar lang="ja" />
+  <main>
+    <section id="about">
+      <div class="sec-head"><span class="num">01.</span><h2>自己紹介</h2></div>
+      <p>半導体製造のための、現場に根ざした Agentic AI を作っています。ソニーセミコンダクタ（SSS/SCM）で <strong>7.5 年</strong>、有限状態機械（FSM）を核とする fab 向けシステムに携わり、AI・DX 分野で <strong>General Manager Award</strong> を受賞しました。現在は <strong>BayCurrent Consulting のシニアコンサルタント</strong>です。</p>
+      <p>私の基準は一つだけです。<strong>AI の居場所はデモではなく実測で決める。</strong>すべての AI コンポーネントをルールベースラインと同条件で測り、勝った場所にだけ置く。負けた結果も公開します。</p>
+      <p style="margin-top:26px">仕事の外では風景写真を撮っています。主に長崎の風景です。下の枠は自分の写真のための場所です。</p>
+      <div class="photo-strip"><div class="photo-slot"><div class="cam">📷</div><div class="cap">高凌霄の風景写真 — 写真を追加予定</div><div class="loc">長崎、日本</div></div><div class="photo-slot"><div class="cam">📷</div><div class="cap">高凌霄の風景写真 — 写真を追加予定</div><div class="loc">長崎、日本</div></div><div class="photo-slot"><div class="cam">📷</div><div class="cap">高凌霄の風景写真 — 写真を追加予定</div><div class="loc">長崎、日本</div></div></div>
+    </section>
+
+    <section id="flagship">
+      <div class="sec-head"><span class="num">02.</span><h2>代表作 — ResiliMES-AI</h2></div>
+      <p class="lede">fab のガントチャート上のバーや空き時間を右クリックして「なぜ？」と聞けるシステムです。</p>
+      <p>スケジュールは <strong>1,313 台の装置、2,156 ロット、264 件の Q-time 制約</strong>に及び、現場は「空いているように見える」時間を埋めてしまいがちです。しかしその空き時間は、下流の Q-time を守るための意図的な判断でした。ルールがすべての判断を行い理由を記録し、AI は説明だけを担当します。Open Agent Hackathon 2026、Track 02 出品作です。</p>
+      <figure class="flagship-card">
+        <div class="shot">
+          <div class="step">1 — バーや空き時間を右クリック</div>
+          <img src="https://raw.githubusercontent.com/Toygaolingxiao/ResiliMES-AI/main/docs/deck/img/p5_menu.jpg" alt="ResiliMES-AI ガントチャートの右クリック調査メニュー">
+          <figcaption>調査の入口：バー、空き時間、時間軸を右クリック。</figcaption>
+        </div>
+        <div class="shot">
+          <div class="step">2 — 説明パネル（数字はすべてコードで検証済み）</div>
+          <img src="https://raw.githubusercontent.com/Toygaolingxiao/ResiliMES-AI/main/docs/deck/img/p5_panel.jpg" alt="ResiliMES-AI の調査パネル（事実確認済みの説明）">
+          <figcaption>回答はスケジューラ自身の判断記録から。AI が説明を書き、数字はすべてコードが照合します。</figcaption>
+        </div>
+      </figure>
+      <ul class="facts">
+        <li>意図的な空き時間 6,864 件をすべて埋めると、回避可能な Q-time 違反は <b>23 → 42</b> に増えます</li>
+        <li>シフトノートの AI 抽出で違反は <b>17 → 14</b> に（金標イベントと同点、新規違反 0）</li>
+        <li>AI（Nemotron）を外してもスケジュールは <b>不変</b>（通常実行では AI 呼び出し 0 回）</li>
+        <li>AI 当直の発動は工場出荷条件で <b>0 回</b>——異常はすべてルールが処理しました。実測のまま書きます</li>
+      </ul>
+      <div class="links-row">
+        <a href="https://github.com/Toygaolingxiao/ResiliMES-AI">GitHub リポジトリ ↗</a>
+      </div>
+    </section>
+
+    <section id="works">
+      <div class="sec-head"><span class="num">03.</span><h2>作品と Somme マトリクス</h2></div>
+      <div class="work">
+        <h3><a href="https://komesomme.jp">KomeSomme｜侍米師</a> <span class="tag">公開中</span></h3>
+        <p>日本米の銘柄を味わいの地図から探すサイト。Somme マトリクスの最初のセルです。</p>
+      </div>
+      <div class="work">
+        <h3>Schedule_Viewer <span class="tag grey">v7.16.1 · ケーススタディ準備中</span></h3>
+        <p>AI スケジューラ出力の可視化・解析・制約検証プラットフォーム（Django + Rust）。ResiliMES-AI のガントの前身です。</p>
+      </div>
+      <p>Somme マトリクス：同じ atlas の骨格を日本の特産へ。</p>
+      <div class="matrix">
+        <div class="cell"><div class="big">🍚</div><div class="name">米</div><div class="st">公開中</div></div>
+        <div class="cell planned"><div class="big">🍶</div><div class="name">日本酒</div><div class="st">計画中</div></div>
+        <div class="cell planned"><div class="big">🥃</div><div class="name">ウイスキー</div><div class="st">計画中</div></div>
+        <div class="cell planned"><div class="big">🍑</div><div class="name">桃</div><div class="st">計画中</div></div>
+        <div class="cell planned"><div class="big">🐄</div><div class="name">和牛</div><div class="st">計画中</div></div>
+      </div>
+      <div class="chips" style="margin-top:26px">
+        <span class="chip">C# FSM</span><span class="chip">Python</span><span class="chip">PyTorch</span><span class="chip">DRL</span><span class="chip">Agentic AI</span>
+      </div>
+      <p style="font-size:14.5px">資格：AZ-900 · AI-901 · DP-900 · GH-300 · AWS AIF-C01</p>
+    </section>
+
+    <section id="contact">
+      <div class="sec-head"><span class="num">04.</span><h2>連絡先</h2></div>
+      <p>連絡は GitHub が最速です。</p>
+      <a class="cta" href="https://github.com/Toygaolingxiao">github.com/Toygaolingxiao</a>
+    </section>
+
+    <footer>v0 — ローカル構築版。未公開。</footer>
+  </main>
+</div>
+</Base>
