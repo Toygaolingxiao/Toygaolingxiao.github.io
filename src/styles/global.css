@@ -90,10 +90,10 @@ td b{color:var(--ink);font-weight:700}
 .work p{margin:8px 0 0;font-size:15.5px}
 
 .matrix{display:grid;grid-template-columns:repeat(auto-fit,minmax(128px,1fr));gap:12px;margin-top:6px}
-.cell{border:1px solid var(--line);padding:18px 14px;text-align:center}
+.cell{border:1px solid var(--line);padding:18px 14px;text-align:center;display:flex;flex-direction:column}
 .cell .big{font-size:26px}
 .cell .name{font-family:var(--serif);font-weight:500;margin-top:6px;font-size:16px}
-.cell .st{font-size:11px;letter-spacing:.12em;text-transform:uppercase;margin-top:4px;color:var(--accent)}
+.cell .st{font-size:11px;letter-spacing:.12em;text-transform:uppercase;margin-top:auto;padding-top:4px;color:var(--accent)}
 .cell.planned{opacity:.55}
 .cell.planned .st{color:var(--faint)}
 
