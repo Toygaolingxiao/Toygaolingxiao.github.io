@@ -13,7 +13,7 @@ import photos from '../data/photos.json';
       <p>For <strong>7.25 years at Sony Semiconductor Manufacturing</strong>, I built manufacturing execution systems (MES) and an AI scheduling system for fab operations — work that received a <strong>Department Manager Award (AI/DX)</strong>. Today I am a <strong>Senior Consultant at BayCurrent Consulting</strong>, where my client work includes a POS system built in C# around finite-state-machine design.</p>
       <p>My working rule is simple: <strong>AI earns its place by measurement, not by demo.</strong> Every AI component I ship is benchmarked against a rule-based baseline on the same data. Where it wins, it stays. Where it loses, it moves to explaining — and the losses are published too.</p>
       <p>That discipline produced my flagship project below.</p>
-      <p class="photo-note">Off the fab floor, I photograph landscapes. I am based in Tokyo; most of my frames are still of Nagasaki, where I lived for years.</p>
+      <p class="photo-note">Off the fab floor, I photograph landscapes — a sideline; the work above is the main story. I am based in Tokyo; most of my frames are still of Nagasaki, where I lived for years.</p>
       <figure class="photo-main"><img src="https://www.nagasaki-tabinet.com/storage/special_feature_paragraph_contents/3960/responsive_images/ZxE0zKjIUQ0eWeGq5y9if8PyfyD8XYvyCUdw7FIV__999_999.jpeg" alt="Nagasaki tram in snow — photograph by Lingxiao Gao (Takae_lx)"><figcaption>Nagasaki, in winter · Runner-up Grand Prize, Nagasaki 'Omotenashi' Photo Contest. © Lingxiao Gao (Takae_lx)</figcaption></figure>
       <div class="photo-grid">
         <figure class="photo-item"><img src={photos["crescent-lighthouse"]} alt="Crescent Moon Lighthouse — Nagasaki"><figcaption>Crescent Moon Lighthouse — Nagasaki</figcaption></figure>
@@ -116,6 +116,16 @@ import photos from '../data/photos.json';
 
     <section id="experience">
       <div class="sec-head"><span class="num">06.</span><h2>Experience</h2></div>
+      <div class="honours-group">
+        <div class="honours-label">Selected results</div>
+        <ul class="facts">
+          <li>AI scheduler, Sony — 24-hour simulation cut from <b>20+ minutes</b> to <b>under 5</b>; constraint core from <b>~2 hours</b> to <b>3.7 seconds</b> (Rust)</li>
+          <li>Lithography standalone programme — operating efficiency <b>×3</b>, delivered without delay (sub-leader, up to 30 people)</li>
+          <li>Joint task force with a global semiconductor maker — lead time <b>−25%</b>, daily output <b>+61%</b></li>
+          <li>Department Manager Award (AI/DX) and High Performance Rewards, 2026; top performance rating three years running</li>
+          <li>ResiliMES-AI (public) — every AI claim on this page is a measured result, including the ones where AI lost</li>
+        </ul>
+      </div>
       <div class="xp">
         <div class="when">Jul 2026 – Present</div>
         <h3>BayCurrent Consulting — Senior Consultant</h3>
@@ -130,9 +140,9 @@ import photos from '../data/photos.json';
         <h3>Sony Semiconductor Manufacturing — Optimal Production Systems Development Dept.</h3>
         <p>Technical lead of a five-person team.</p>
         <ul class="facts">
-          <li>Led the requirements, architecture, and infrastructure design of a next-generation AI production scheduler using deep reinforcement learning (GRPO), modelling 32 manufacturing constraints.</li>
           <li>Cut the computation time for a 24-hour schedule simulation from over 20 minutes to under 5 minutes.</li>
           <li>Rebuilt the constraint-checking core logic in Rust (PyO3), cutting heavy computation from about 2 hours to 3.7 seconds.</li>
+          <li>Led the requirements, architecture, and infrastructure design of a next-generation AI production scheduler using deep reinforcement learning (GRPO), modelling 32 manufacturing constraints.</li>
           <li>Built and deployed a real-time manufacturing-data visualisation system (Gantt charts, WIP heat maps, flow forecasting, bottleneck identification), now used in department operations.</li>
         </ul>
       </div>
