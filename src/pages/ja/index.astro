@@ -9,9 +9,9 @@ import photos from '../../data/photos.json';
   <main>
     <section id="about">
       <div class="sec-head"><span class="num">01.</span><h2>自己紹介</h2></div>
-      <p>半導体製造のための、現場に根ざした Agentic AI を作っています。ソニーセミコンダクタマニュファクチャリングで <strong>7.25 年</strong>、fab 向けの製造実行システム（MES）と AI スケジューリングシステムの開発に携わり、生産技術部門 <strong>部門長賞【AI/DX賞】</strong>を受賞しました。現在は <strong>BayCurrent Consulting のシニアコンサルタント</strong>として、有限状態機械（FSM）設計を核とする C# 製 POS システムの刷新プロジェクトでシステム全体のアーキテクチャ設計を担い、2026年11月からはテスト自動化チーム（4名）のリーダーを務めています。</p>
+      <p>半導体製造のための Agentic AI を作っています。ソニーセミコンダクタマニュファクチャリングで <strong>7.25 年</strong>、fab 向けの製造実行システム（MES）と AI スケジューリングシステムの開発に携わり、生産技術部門 <strong>部門長賞【AI/DX賞】</strong>を受賞しました。現在は <strong>BayCurrent Consulting のシニアコンサルタント</strong>として、有限状態機械（FSM）設計を核とする C# 製 POS システムの刷新プロジェクトでシステム全体のアーキテクチャ設計を担い、2026年11月からはテスト自動化チーム（4名）のリーダーを務めています。</p>
       <p>私の基準は一つだけです。<strong>AI の居場所はデモではなく実測で決める。</strong>すべての AI コンポーネントをルールベースラインと同条件で測り、勝った場所にだけ置く。負けた結果も公開します。</p>
-      <p style="margin-top:26px">仕事の外では風景写真を撮っています。あくまで傍らの楽しみであり、主軸は上記の仕事です。拠点は東京ですが、被写体の中心は、長年暮らした長崎です。写真はこのページの最後にまとめています。</p>
+      <p style="margin-top:26px">仕事の外では風景写真を撮っています。拠点は東京ですが、被写体の中心は長年暮らした長崎です。</p>
     </section>
 
     <section id="flagship">
@@ -25,7 +25,7 @@ import photos from '../../data/photos.json';
           <figcaption>調査の入口：バー、空き時間、時間軸を右クリック。</figcaption>
         </div>
         <div class="shot">
-          <div class="step">2 — 説明パネル（数字はすべてコードで検証済み）</div>
+          <div class="step">2 — 説明パネル</div>
           <img src={photos["gantt-panel"]} alt="ResiliMES-AI の調査パネル（事実確認済みの説明）">
           <figcaption>回答はスケジューラ自身の判断記録から。AI が説明を書き、数字はすべてコードが照合します。</figcaption>
         </div>
@@ -34,12 +34,11 @@ import photos from '../../data/photos.json';
         <li>意図的な空き時間 6,864 件をすべて埋めると、回避可能な Q-time 違反は <b>23 → 42</b> に増えます</li>
         <li>シフトノートの AI 抽出で違反は <b>17 → 14</b> に（金標イベントと同点、新規違反 0）</li>
         <li>AI（Nemotron）を外してもスケジュールは <b>不変</b>（通常実行では AI 呼び出し 0 回）</li>
-        <li>AI 当直の発動は工場出荷条件で <b>0 回</b>——異常はすべてルールが処理しました。実測のまま書きます</li>
+        <li>AI 当直の発動は工場出荷条件で <b>0 回</b>——異常はすべてルールが処理しました。</li>
         <li>右クリック調査 — 12件中11件で原因を特定；提案レバーのうち再シミュレーションを通過したのは12件中1件</li>
       </ul>
       <div class="links-row">
         <a href="https://github.com/Toygaolingxiao/ResiliMES-AI">GitHub リポジトリ ↗</a>
-        <span class="placeholder" id="demo-video-placeholder">デモ動画 — リンク準備中</span>
       </div>
     </section>
 
@@ -53,7 +52,7 @@ import photos from '../../data/photos.json';
         <h3>Schedule_Viewer <span class="tag grey">v7.16.1 · ケーススタディ準備中</span></h3>
         <p>AI スケジューラ出力の可視化・解析・制約検証プラットフォーム（Django + Rust）。ResiliMES-AI のガントの前身です。</p>
       </div>
-      <p>Somme マトリクス：同じ atlas の骨格を日本の特産へ。</p>
+      <p>味わいの地図、銘柄ライブラリ、「ソムリエに聞く」ガイド——同じ骨格を、日本の特産ごとに展開します。</p>
       <div class="matrix">
         <div class="cell"><div class="big">🍚</div><div class="name">米</div><div class="st">公開中</div></div>
         <div class="cell planned"><div class="big">🍶</div><div class="name">日本酒</div><div class="st">計画中</div></div>
@@ -72,17 +71,16 @@ import photos from '../../data/photos.json';
           <li>LITHOスタンドアロン化 — 稼働効率<b>3倍</b>、無遅延で完遂（最大30名体制のサブリーダー）</li>
           <li>グローバル半導体メーカーとの共同タスクフォース — リードタイム<b>−25%</b>、デイリー生産数<b>+61%</b></li>
           <li>生産技術部門 部門長賞【AI/DX賞】・High Performance Rewards（2026年）、直近3年連続最高評価</li>
-          <li>ResiliMES-AI（公開）— 本ページのAIに関する主張はすべて実測値。AIが負けた結果も含む</li>
         </ul>
       </div>
       <div class="xp">
         <div class="when">2026年7月 – 現在</div>
         <h3>株式会社ベイカレント・コンサルティング — シニアコンサルタント</h3>
         <ul class="facts">
-          <li>入社後、SAP S/4HANA領域のキャッチアップを行い、約2カ月でSAP認定資格5件（生産計画、購買、販売、ABAP開発、SAP Activateプロジェクトマネージャー）を取得。</li>
-          <li>生成AIを活用した学習支援ツールを自律的に設計・開発し、ERPグループ（数十名）へ展開。グループメンバーの資格合格に直接貢献。</li>
-          <li>社内Sub-WG「SAP PP × APS/MESの機能境界とデータ同期モデル研究」を主宰し、製造領域の知見共有を推進。</li>
-          <li>2026年10月より、小売業向けPOSシステム刷新プロジェクトでシステム全体のアーキテクチャ設計を主導。データ連携方式の再構築とテスト自動化AIエージェントの設計を推進（C#／Python）。</li>
+          <li>入社後約2カ月でSAP認定資格5件（生産計画、購買、販売、ABAP開発、SAP Activateプロジェクトマネージャー）を取得。</li>
+          <li>生成AIを活用した学習支援ツールを設計・開発し、ERPグループ（数十名）へ展開。グループメンバーの資格合格に直接貢献。</li>
+          <li>社内Sub-WG「SAP PP × APS/MESの機能境界とデータ同期モデル研究」を主宰。</li>
+          <li>2026年10月より、小売業向けPOSシステム刷新プロジェクトでシステム全体のアーキテクチャ設計を主導。データ連携方式の再構築とテスト自動化AIエージェントの設計を担当（C#／Python）。</li>
           <li>対象のPOSシステムは C# で開発され、有限状態機械（FSM）設計を核とする。</li>
           <li>2026年11月より、同プロジェクトのテスト自動化チーム（4名）のリーダーを担当。</li>
         </ul>
@@ -105,7 +103,7 @@ import photos from '../../data/photos.json';
           <li><strong>LITHO工程スタンドアロン化プロジェクト（2021年12月 – 2025年3月）:</strong> 最大30名体制のサブリーダー。装置スタンドアロン化に伴うMES大規模改修と自動化制御の刷新を主導し、LITHO工程の稼働効率を3倍に向上。プロジェクトを無遅延で完遂。</li>
           <li><strong>グローバル大手半導体メーカーとの共同タスクフォース（2023年7月 – 10月、以降スポット対応）:</strong> MES／Dispatch／Schedule／AMHS／ECSの日中システムテクニカル通訳とブリッジエンジニアリングを主導。製品リードタイム25%短縮、デイリー生産数61%向上に貢献。</li>
           <li><strong>高度制御機能の開発（2019年 – 2021年）:</strong> バーチャル測定制御機能の改造・水平展開により、測定機負荷軽減とリードタイム短縮を達成。</li>
-          <li>コロナ禍では最大20名のチームリーダーとして、1,000人規模のリモート開発環境の整備・管理を完遂し、工場の無停止稼働を担保。</li>
+          <li>コロナ禍では最大20名のチームリーダーとして、1,000人規模のリモート開発環境を整備・管理し、工場の稼働を止めなかった。</li>
           <li>MES更新に伴う工場内端末更新において、3日間で600台以上の端末デプロイをノートラブルで完了。</li>
         </ul>
       </div>

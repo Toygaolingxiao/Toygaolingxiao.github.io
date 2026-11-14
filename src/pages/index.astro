@@ -12,8 +12,7 @@ import photos from '../data/photos.json';
       <p class="lede">I build production-oriented AI for semiconductor manufacturing.</p>
       <p>For <strong>7.25 years at Sony Semiconductor Manufacturing</strong>, I built manufacturing execution systems (MES) and an AI scheduling system for fab operations — work that received a <strong>Department Manager Award (AI/DX)</strong>. Today I am a <strong>Senior Consultant at BayCurrent Consulting</strong>, where I lead the architecture design of a retail POS system renewal (a POS system built in C# around finite-state-machine design) and, since November 2026, its four-person test automation team.</p>
       <p>My working rule is simple: <strong>AI earns its place by measurement, not by demo.</strong> Every AI component I ship is benchmarked against a rule-based baseline on the same data. Where it wins, it stays. Where it loses, it moves to explaining — and the losses are published too.</p>
-      <p>That discipline produced my flagship project below.</p>
-      <p class="photo-note">Off the fab floor, I photograph landscapes — a sideline; the work above is the main story. I am based in Tokyo; most of my frames are still of Nagasaki, where I lived for years. The photographs are collected at the bottom of this page.</p>
+      <p class="photo-note">Off the fab floor, I photograph landscapes — a sideline. Most of my frames are still of Nagasaki, where I lived for years.</p>
     </section>
 
     <section id="flagship">
@@ -24,24 +23,23 @@ import photos from '../data/photos.json';
         <div class="shot">
           <div class="step">1 — Right-click a bar or gap</div>
           <img src={photos["gantt-menu"]} alt="ResiliMES-AI Gantt chart with right-click investigation menu">
-          <figcaption>The investigation entry: right-click any bar, gap, or the time axis on the Gantt.</figcaption>
+          <figcaption>Right-click works on the time axis too.</figcaption>
         </div>
         <div class="shot">
           <div class="step">2 — The explanation panel, every number fact-checked</div>
           <img src={photos["gantt-panel"]} alt="ResiliMES-AI investigation panel with the fact-checked explanation">
-          <figcaption>The answer comes from the scheduler's own decision record. The AI drafts the explanation; code checks every number before it is shown.</figcaption>
+          <figcaption>The answer comes from the scheduler's own decision record — the AI only drafts the wording.</figcaption>
         </div>
         <table>
           <tr><th>Test</th><th>Measured result</th></tr>
           <tr><td>Fill the gaps</td><td>Filling all 6,864 deliberate idle gaps in a 48 h run raises avoidable Q-time violations from <b>23 → 42</b>. The gaps are decisions, not waste.</td></tr>
           <tr><td>Shift-note extraction</td><td>AI-extracted shift notes cut avoidable Q-time violations <b>17 → 14</b> — matching the gold-standard events, with <b>0 new violations</b>.</td></tr>
           <tr><td>Remove the AI</td><td>Removing Nemotron leaves the schedule <b>unchanged</b>: 0 AI calls in the default run. The AI never writes the schedule.</td></tr>
-          <tr><td>AI duty officer</td><td>Under factory trigger settings, the AI escalation path fired <b>0 times</b> — the rule kernel handled every anomaly. Reported as measured, not dressed up as a feature.</td></tr>
+          <tr><td>AI duty officer</td><td>Under factory trigger settings, the AI escalation path fired <b>0 times</b> — the rule kernel handled every anomaly.</td></tr>
           <tr><td>Explainer accuracy</td><td>Right-click explainer — named the cause in <b>11 of 12</b> cases; only <b>1 of 12</b> suggested levers survived re-simulation.</td></tr>
         </table>
         <div class="links-row">
           <a href="https://github.com/Toygaolingxiao/ResiliMES-AI">GitHub repository ↗</a>
-          <span class="placeholder" id="demo-video-placeholder">Demo video — link to be added</span>
         </div>
       </figure>
     </section>
@@ -84,7 +82,6 @@ import photos from '../data/photos.json';
         <div class="soon">START HERE</div>
         <h3>We tried AI at every step of a fab — and let it only explain.</h3>
         <p>The full ResiliMES-AI case review: every place AI was tried, each measured against the rule baseline — where it helped, where it tied, and where it lost.</p>
-        <p class="soon" style="margin-top:8px">In preparation — published here first.</p>
       </div>
     </section>
 
@@ -97,7 +94,6 @@ import photos from '../data/photos.json';
           <li>Lithography standalone programme — operating efficiency <b>×3</b>, delivered without delay (sub-leader, up to 30 people)</li>
           <li>Joint task force with a global semiconductor maker — lead time <b>−25%</b>, daily output <b>+61%</b></li>
           <li>Department Manager Award (AI/DX) and High Performance Rewards, 2026; top performance rating three years running</li>
-          <li>ResiliMES-AI (public) — every AI claim on this page is a measured result, including the ones where AI lost</li>
         </ul>
       </div>
       <div class="xp">
@@ -204,7 +200,7 @@ import photos from '../data/photos.json';
 
     <section id="contact">
       <div class="sec-head"><span class="num">08.</span><h2>Contact</h2></div>
-      <p>The fastest way to reach me is GitHub. Manufacturing peers: start with the flagship — the numbers are all there. Opportunities and introductions: GitHub is the door.</p>
+      <p>The fastest way to reach me is GitHub.</p>
       <a class="cta" href="https://github.com/Toygaolingxiao">github.com/Toygaolingxiao</a>
     </section>
 
