@@ -9,7 +9,7 @@ import photos from '../../data/photos.json';
   <main>
     <section id="about">
       <div class="sec-head"><span class="num">01.</span><h2>自己紹介</h2></div>
-      <p>半導体製造のための Agentic AI を作っています。ソニーセミコンダクタマニュファクチャリングで <strong>7.25 年</strong>、fab 向けの製造実行システム（MES）と AI スケジューリングシステムの開発に携わり、生産技術部門 <strong>部門長賞【AI/DX賞】</strong>を受賞しました。現在は <strong>BayCurrent Consulting のシニアコンサルタント</strong>として、有限状態機械（FSM）設計を核とする C# 製 POS システムの刷新プロジェクトでシステム全体のアーキテクチャ設計を担い、2026年11月からはテスト自動化チーム（4名）のリーダーを務めています。</p>
+      <p>半導体製造のための Agentic AI を作っています。ソニーセミコンダクタマニュファクチャリングで <strong>7.25 年</strong>、fab 向けの製造実行システム（MES）と AI スケジューリングシステムの開発に携わり、生産技術部門 <strong>部門長賞【AI/DX賞】</strong>を受賞しました。現在は <strong>BayCurrent Consulting のシニアコンサルタント</strong>として、有限状態機械（FSM）設計を核とする C# 製 POS システムの刷新プロジェクトでシステム全体のアーキテクチャ設計を担っています。</p>
       <p>私の基準は一つだけです。<strong>AI の居場所はデモではなく実測で決める。</strong>すべての AI コンポーネントをルールベースラインと同条件で測り、勝った場所にだけ置く。負けた結果も公開します。</p>
       <p style="margin-top:26px">仕事の外では風景写真を撮っています。拠点は東京ですが、被写体の中心は長年暮らした長崎です。</p>
     </section>
@@ -49,6 +49,10 @@ import photos from '../../data/photos.json';
         <p>日本米の銘柄を味わいの地図から探すサイト。Somme マトリクスの最初のセルです。</p>
       </div>
       <div class="work">
+        <h3><a href="https://if-that-year.pages.dev/">如果那年（If That Year）</a> <span class="tag">公開中</span></h3>
+        <p>選ばなかった人生を「影」として見せる、ブラウザ人生シミュレーションゲーム。</p>
+      </div>
+      <div class="work">
         <h3>Schedule_Viewer <span class="tag grey">v7.16.1 · ケーススタディ準備中</span></h3>
         <p>AI スケジューラ出力の可視化・解析・制約検証プラットフォーム（Django + Rust）。ResiliMES-AI のガントの前身です。</p>
       </div>
@@ -62,8 +66,21 @@ import photos from '../../data/photos.json';
       </div>
     </section>
 
+    <section id="writing">
+      <div class="sec-head"><span class="num">04.</span><h2>執筆</h2></div>
+      <p style="font-size:15px">note にて「高江 Takae」名義で執筆。生産計画、AIエージェント、検証の実践メモです。</p>
+      <ul class="facts">
+        <li><a href="https://note.com/toy_takae/n/ne4e5317a712f">SAP PP・APS・MES の連携を 1 枚に描いて、決めた境界と残った 3 つの論点</a>（2026年11月、マガジン『生産計画』創刊号）</li>
+        <li><a href="https://note.com/toy_takae/n/n8001ff660465">AIレビューSkillは、「合格」してからが本番だった</a>（2026年11月）</li>
+        <li><a href="https://note.com/toy_takae/n/n9e75e7a514fd">「いい感じにレビューして」で、AIレビューは動かない</a>（2026年11月）</li>
+        <li><a href="https://note.com/toy_takae/n/na77cb6790c83">AI4体と人間1人で円卓を開いたら、「全会一致」にはならなかった</a>（2026年11月）</li>
+        <li><a href="https://note.com/toy_takae/n/n89b97e2dbcc5">ふるさと納税で「米」を選ぶ前に、決めておきたい3つのこと</a>（2026年11月）</li>
+        <li><a href="https://note.com/toy_takae/n/nfd49663b501a">製造業のAIエージェントに必要なのは、賢さより「止まれること」だ</a>（2026年11月）</li>
+      </ul>
+    </section>
+
     <section id="experience">
-      <div class="sec-head"><span class="num">04.</span><h2>経歴</h2></div>
+      <div class="sec-head"><span class="num">05.</span><h2>経歴</h2></div>
       <div class="honours-group">
         <div class="honours-label">主な実績</div>
         <ul class="facts">
@@ -79,10 +96,10 @@ import photos from '../../data/photos.json';
         <ul class="facts">
           <li>入社後約2カ月でSAP認定資格5件（生産計画、購買、販売、ABAP開発、SAP Activateプロジェクトマネージャー）を取得。</li>
           <li>生成AIを活用した学習支援ツールを設計・開発し、ERPグループ（数十名）へ展開。グループメンバーの資格合格に直接貢献。</li>
+          <li>大規模業務システムの方式設計レビューを支援するAI Review Skillを設計・実装。レポートの引用は原文と機械照合され、自動テスト205件・受入試験を経て2026年11月に社内試用を開始。</li>
           <li>社内Sub-WG「SAP PP × APS/MESの機能境界とデータ同期モデル研究」を主宰。</li>
           <li>2026年10月より、小売業向けPOSシステム刷新プロジェクトでシステム全体のアーキテクチャ設計を主導。データ連携方式の再構築とテスト自動化AIエージェントの設計を担当（C#／Python）。</li>
           <li>対象のPOSシステムは C# で開発され、有限状態機械（FSM）設計を核とする。</li>
-          <li>2026年11月より、同プロジェクトのテスト自動化チーム（4名）のリーダーを担当。</li>
         </ul>
       </div>
       <div class="xp">
@@ -146,7 +163,7 @@ import photos from '../../data/photos.json';
     </section>
 
     <section id="photography">
-      <div class="sec-head"><span class="num">05.</span><h2>写真</h2></div>
+      <div class="sec-head"><span class="num">06.</span><h2>写真</h2></div>
       <figure class="photo-main"><img src={photos["tram-signature"]} alt="雪の長崎を走る路面電車 — 高凌霄（Takae_lx）撮影"><figcaption>雪の長崎 ・ 長崎『おもてなし』フォトコンテスト 準グランプリ。© 高凌霄（Takae_lx）</figcaption></figure>
       <div class="photo-grid">
         <figure class="photo-item"><img src={photos["crescent-lighthouse"]} alt="新月灯台 — 長崎"><figcaption>新月灯台 — 長崎</figcaption></figure>
@@ -176,7 +193,7 @@ import photos from '../../data/photos.json';
     </section>
 
     <section id="contact">
-      <div class="sec-head"><span class="num">06.</span><h2>連絡先</h2></div>
+      <div class="sec-head"><span class="num">07.</span><h2>連絡先</h2></div>
       <p>連絡は GitHub が最速です。</p>
       <a class="cta" href="https://github.com/Toygaolingxiao">github.com/Toygaolingxiao</a>
     </section>

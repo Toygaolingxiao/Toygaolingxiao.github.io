@@ -10,7 +10,7 @@ import photos from '../data/photos.json';
     <section id="about">
       <div class="sec-head"><span class="num">01.</span><h2>About</h2></div>
       <p class="lede">I build production-oriented AI for semiconductor manufacturing.</p>
-      <p>For <strong>7.25 years at Sony Semiconductor Manufacturing</strong>, I built manufacturing execution systems (MES) and an AI scheduling system for fab operations — work that received a <strong>Department Manager Award (AI/DX)</strong>. Today I am a <strong>Senior Consultant at BayCurrent Consulting</strong>, where I lead the architecture design of a retail POS system renewal (a POS system built in C# around finite-state-machine design) and, since November 2026, its four-person test automation team.</p>
+      <p>For <strong>7.25 years at Sony Semiconductor Manufacturing</strong>, I built manufacturing execution systems (MES) and an AI scheduling system for fab operations — work that received a <strong>Department Manager Award (AI/DX)</strong>. Today I am a <strong>Senior Consultant at BayCurrent Consulting</strong>, where I lead the architecture design of a retail POS system renewal (a POS system built in C# around finite-state-machine design).</p>
       <p>My working rule is simple: <strong>AI earns its place by measurement, not by demo.</strong> Every AI component I ship is benchmarked against a rule-based baseline on the same data. Where it wins, it stays. Where it loses, it moves to explaining — and the losses are published too.</p>
       <p class="photo-note">Off the fab floor, I photograph landscapes — a sideline. Most of my frames are still of Nagasaki, where I lived for years.</p>
     </section>
@@ -51,6 +51,10 @@ import photos from '../data/photos.json';
         <p>An atlas of Japanese rice brands by flavour: pick today's bowl by dish, mood, or pairing. The first cell of the Somme Matrix.</p>
       </div>
       <div class="work">
+        <h3><a href="https://if-that-year.pages.dev/">If That Year （如果那年）</a> <span class="tag">Live</span></h3>
+        <p>A browser life-simulation game about the road not taken — live one life, then see the parallel life that might have been.</p>
+      </div>
+      <div class="work">
         <h3>Schedule_Viewer <span class="tag grey">v7.16.1 · Case study in preparation</span></h3>
         <p>A Django + Rust platform for visualising, analysing, and constraint-checking AI scheduler output — Gantt charts, schedule analysis, KPI dashboards. The direct predecessor of ResiliMES-AI's Gantt. (Private repository.)</p>
       </div>
@@ -78,11 +82,15 @@ import photos from '../data/photos.json';
 
     <section id="writing">
       <div class="sec-head"><span class="num">05.</span><h2>Writing</h2></div>
-      <div class="start-card">
-        <div class="soon">START HERE</div>
-        <h3>We tried AI at every step of a fab — and let it only explain.</h3>
-        <p>The full ResiliMES-AI case review: every place AI was tried, each measured against the rule baseline — where it helped, where it tied, and where it lost.</p>
-      </div>
+      <p style="font-size:15px">Essays in Japanese on note, as <b>高江 Takae</b> — production planning, AI agents, and how AI work gets verified.</p>
+      <ul class="facts">
+        <li><a href="https://note.com/toy_takae/n/ne4e5317a712f">SAP PP・APS・MES の連携を 1 枚に描いて、決めた境界と残った 3 つの論点</a> — one diagram for the SAP PP / APS / MES boundary; launch essay of the 『生産計画』 magazine (Nov 2026)</li>
+        <li><a href="https://note.com/toy_takae/n/n8001ff660465">AIレビューSkillは、「合格」してからが本番だった</a> — the AI review Skill, part 2: the real work starts after acceptance (Nov 2026)</li>
+        <li><a href="https://note.com/toy_takae/n/n9e75e7a514fd">「いい感じにレビューして」で、AIレビューは動かない</a> — designing an AI design-review Skill (Nov 2026)</li>
+        <li><a href="https://note.com/toy_takae/n/na77cb6790c83">AI4体と人間1人で円卓を開いたら、「全会一致」にはならなかった</a> — four AIs and one human at a roundtable (Nov 2026)</li>
+        <li><a href="https://note.com/toy_takae/n/n89b97e2dbcc5">ふるさと納税で「米」を選ぶ前に、決めておきたい3つのこと</a> — choosing rice with the hometown-tax donation (Nov 2026)</li>
+        <li><a href="https://note.com/toy_takae/n/nfd49663b501a">製造業のAIエージェントに必要なのは、賢さより「止まれること」だ</a> — a manufacturing AI agent needs to be able to stop (Nov 2026)</li>
+      </ul>
     </section>
 
     <section id="experience">
@@ -102,10 +110,10 @@ import photos from '../data/photos.json';
         <ul class="facts">
           <li>Completed an SAP S/4HANA catch-up on joining, earning five SAP certifications (production planning, procurement, sales, ABAP development, and Activate project management) in about two months.</li>
           <li>Designed, built, and rolled out a generative-AI study-support tool to the ERP group (several dozen members), directly supporting members' certification passes.</li>
+          <li>Designed and built an AI design-review agent for large-scale business systems — every citation in its reports is machine-checked against the source text. It passed acceptance testing (205 automated tests) and entered internal trial in November 2026.</li>
           <li>Chairs an internal Sub-WG studying the functional boundary and data-synchronisation model between SAP PP and APS/MES, sharing manufacturing-domain knowledge within the company.</li>
           <li>Since October 2026, leads the overall architecture design of a retail POS system renewal — including a redesign of its data integration and the design of a test-automation AI agent (C# / Python).</li>
           <li>The POS system is developed in C#, with finite-state-machine design at its core.</li>
-          <li>Since November 2026, also leads the project's four-person test automation team, covering planning, progress, and quality.</li>
         </ul>
       </div>
       <div class="xp">
